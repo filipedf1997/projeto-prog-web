@@ -1,0 +1,4 @@
+pagina inicial - lista de produtos - pub
+login - pub
+cadastro - form(js), link pag inicial - pub
+carrinho - pub
