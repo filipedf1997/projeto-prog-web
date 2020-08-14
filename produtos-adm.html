@@ -20,7 +20,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container">
 
-          <a href="index.html" class="navbar-brand logo"><h1>Donna Luna</h1></a>
+          <a href="home-adm.html" class="navbar-brand logo"><h1>Donna Luna</h1></a>
 
           <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <i class="navbar-toggler-icon"></i>
@@ -28,26 +28,32 @@
 
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ml-auto">
+              	<li class="nav-item mr-5 mt-1">
+              		<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   		Oi, Adm :)
+						</button>
+					  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    	<a class="dropdown-item" href="perfil-adm.html">Conta</a>
+					    	<div class="dropdown-divider"></div>
+					    	<h6 class="dropdown-header">Gerenciar</h6> 	
+					    	<a class="dropdown-item" href="compras-adm.html">Compras</a>
+					    	<a class="dropdown-item" href="categorias-adm.html">Categorias</a>
+					    	<a class="dropdown-item" href="#">Produtos</a>
+					    	<div class="dropdown-divider"></div>
+					    	<a class="dropdown-item" href="relatorios.html">Relatórios</a>
+					    	<div class="dropdown-divider"></div>
+					    	<a class="dropdown-item" href="index.html">LogOut</a>
+					 	</div>
+					</div>
+              	</li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">
-                  <div class="row">
-                    <div class="col-md-5 d-flex justify-content-end align-items-center">
-                      <i class="fas fa-user-circle fa-2x"></i>
-                    </div>
-                    <div class="col-md-7">
-                      Entre ou Cadastra-se
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li class="nav-item d-flex align-items-center">
-              	<a class="nav-link" href="#">
-              		<i class="fas fa-shopping-cart fa-2x"></i>
-              	</a>
-              </li>
-
+              	<li class="nav-item d-flex align-items-center">
+              		<a class="nav-link" href="carrinho.html">
+              			<i class="fas fa-shopping-cart fa-2x"></i>
+              		</a>
+              	</li>
             </ul>
           </div>
 
@@ -55,12 +61,18 @@
       </nav>
     </header>
 
-    <section id="carrinho" class="titulos-secoes">
+    <section class="titulos-secoes">
       <div class="container">
-        <h1>Carrinho</h1>
-
+      	<div class="row">
+      		<div class="col-md-7">
+      			<h1>Produtos</h1>
+      		</div>
+      		<div class="col-md-5">
+      			<h1 class="ml-5">Cadastrar Produto</h1>
+      		</div>
+      	</div>
         <div class="row my-4">
-          <div class="col-md-8">
+          <div class="col-md-7">
             
             <div class="row my-3">
               <div class="col-md-4">
@@ -68,25 +80,16 @@
               </div>
               <div class="col-md-8">
                 <h3>Camisa polo</h3>
-                <p>Camisa polo branca de algodão</p>
-                <div class="form-row">
+                <p class="p-sem-margin"><strong>Categorias: </strong>Blusas, Masculino</p>
+                <p class="p-sem-margin">Camisa polo branca de algodão</p>
+                <div class="row">
                   <div class="col-md-6">
                     <h5 class="text-danger preço">R$ 19,90</h5>  
                   </div>
                   <div class="col-md-6">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col d-flex justify-content-end">
                         <button type="button" id="excluir" class="btn btn-danger">Excluir</button>  
-                      </div>
-                      <div class="col-md-8">
-                        <select class="form-control">
-                          <option value="" selected="">Quantidade</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
                       </div>
                     </div>
                   </div>
@@ -100,25 +103,16 @@
               </div>
               <div class="col-md-8">
                 <h3>Camisa polo</h3>
-                <p>Camisa polo branca de algodão</p>
-                <div class="form-row">
+                <p class="p-sem-margin"><strong>Categorias: </strong>Blusas, Masculino</p>
+                <p class="p-sem-margin">Camisa polo branca de algodão</p>
+                <div class="row">
                   <div class="col-md-6">
                     <h5 class="text-danger preço">R$ 19,90</h5>  
                   </div>
                   <div class="col-md-6">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col d-flex justify-content-end">
                         <button type="button" id="excluir" class="btn btn-danger">Excluir</button>  
-                      </div>
-                      <div class="col-md-8">
-                        <select class="form-control">
-                          <option value="" selected="">Quantidade</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
                       </div>
                     </div>
                   </div>
@@ -132,25 +126,16 @@
               </div>
               <div class="col-md-8">
                 <h3>Camisa polo</h3>
-                <p>Camisa polo branca de algodão</p>
-                <div class="form-row">
+                <p class="p-sem-margin"><strong>Categorias: </strong>Blusas, Masculino</p>
+                <p class="p-sem-margin">Camisa polo branca de algodão</p>
+                <div class="row">
                   <div class="col-md-6">
                     <h5 class="text-danger preço">R$ 19,90</h5>  
                   </div>
                   <div class="col-md-6">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col d-flex justify-content-end">
                         <button type="button" id="excluir" class="btn btn-danger">Excluir</button>  
-                      </div>
-                      <div class="col-md-8">
-                        <select class="form-control">
-                          <option value="" selected="">Quantidade</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
                       </div>
                     </div>
                   </div>
@@ -160,17 +145,55 @@
 
           </div>
 
-          <div class="col-md-4">
-            <div class="d-flex justify-content-end">
-              <h2>Total</h2>
-            </div>
-            <div class="d-flex justify-content-end">
-              <h4 class="text-danger">R$ 59,70</h4>  
-            </div>
-            <div class="d-flex justify-content-end">
-              <button type="button" class="btn btn-primary" onclick="mostrarModal('compraSucesso')"><strong>Comprar</strong></button>
-            </div>
+          <div class="col-md-5">
+            <form class="forms-adm">
+	          <div class="form-group">
+	            <label for="nome">Nome</label>
+	            <input type="text" id="nome" class="form-control">
+	          </div>
+
+	          <div class="form-group">
+	            <label for="descricao">Descrição</label>
+	            <textarea type="textarea" id="descricao" class="form-control"></textarea>
+	          </div>
+
+	          <div class="form-row">
+	          	<div class="col-md-6">
+	          		<div class="form-group">
+	          			<label for="preco">Preço</label>
+		          		<div class="input-group mb-3">
+					  		<div class="input-group-prepend">
+					    		<span class="input-group-text">R$</span>
+					  		</div>
+					  		<input type="text" class="form-control" id="preco">
+				  		</div>
+	          		</div>
+	          	</div>
+	          	<div class="col-md-6">
+	          		<div class="form-group">
+	            		<label for="quantidade">Quantidade</label>
+	            		<input type="text" id="quantidade" class="form-control">
+	          		</div>
+	          	</div>
+	          </div>
+	          
+
+	          <div class="form-group">
+	            <label for="categorias">Categorias <em>(separe com ";")</em></label>
+	            <input type="text" id="categorias" class="form-control">
+	          </div>
+
+	          <div class="custom-file mb-3">
+				  <input type="file" class="custom-file-input" id="foto">
+				  <label class="custom-file-label" for="foto">Escolha a foto</label>
+			  </div>
+	          
+	          <div class="">
+	            <a type="button" class="form-control btn btn-primary">Cadastrar</a>
+	          </div>
+       		</form>
           </div>
+
         </div>
       </div>
     </section>
@@ -180,26 +203,7 @@
     		<p>Todos os direitos reservados</p>
     	</div>
     </footer>
-
-    <!-- Modal-->
-    <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="h5Modal"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="textoModal">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" id="btnModal"></button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- JS Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -12,6 +12,10 @@ header{
 	font-family: 'Lobster', cursive;
 }
 
+#nav-login .col-md-6{
+	padding: 0;
+}
+
 .titulos-secoes{
 	padding-top: 7em;
 }
@@ -49,6 +53,22 @@ header{
 
 .cadastrar form{
 	width: 50%;
+}
+
+.btn-excluir{
+	width: 27%;
+	margin: 2em auto;
+}
+
+.p-sem-margin{
+	margin: 0;
+}
+
+.forms-adm{
+	box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	width: 80%;
+	margin: 0 auto;
+	padding: 3em;
 }
 
 footer{

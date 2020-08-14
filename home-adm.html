@@ -20,7 +20,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container">
 
-          <a href="#" class="navbar-brand logo"><h1>Donna Luna</h1></a>
+          <a href="home-adm.html" class="navbar-brand logo"><h1>Donna Luna</h1></a>
 
           <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <i class="navbar-toggler-icon"></i>
@@ -28,26 +28,32 @@
 
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ml-auto">
+              	<li class="nav-item mr-5 mt-1">
+              		<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   		Oi, Adm :)
+						</button>
+					  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    	<a class="dropdown-item" href="perfil-adm.html">Conta</a>
+					    	<div class="dropdown-divider"></div>
+					    	<h6 class="dropdown-header">Gerenciar</h6> 	
+					    	<a class="dropdown-item" href="compras-adm.html">Compras</a>
+					    	<a class="dropdown-item" href="categorias-adm.html">Categorias</a>
+					    	<a class="dropdown-item" href="produtos-adm.html">Produtos</a>
+					    	<div class="dropdown-divider"></div>
+					    	<a class="dropdown-item" href="relatorios.html">Relatórios</a>
+					    	<div class="dropdown-divider"></div>
+					    	<a class="dropdown-item" href="index.html">LogOut</a>
+					 	</div>
+					</div>
+              	</li>
 
-              <li class="nav-item">
-              	<a class="nav-link" href="login.html">
-              		<div class="row" id="nav-login" >
-              			<div class="col-md-5 d-flex justify-content-end align-items-center">
-              				<i class="fas fa-user-circle fa-2x"></i>
-              			</div>
-              			<div class="col-md-6">
-              				Entre ou Cadastra-se
-              			</div>
-              		</div>
-              	</a>
-              </li>
-
-              <li class="nav-item d-flex align-items-center">
-              	<a class="nav-link" href="carrinho.html">
-              		<i class="fas fa-shopping-cart fa-2x"></i>
-              	</a>
-              </li>
-
+              	<li class="nav-item d-flex align-items-center">
+              		<a class="nav-link" href="carrinho.html">
+              			<i class="fas fa-shopping-cart fa-2x"></i>
+              		</a>
+              	</li>
             </ul>
           </div>
 
@@ -55,7 +61,7 @@
       </nav>
     </header>
 
-    <section id="home" class="titulos-secoes">
+    <section class="titulos-secoes">
     	<div class="container">
     		<h1>Produtos</h1>
     	
@@ -70,7 +76,7 @@
 							<h5 class="text-danger preço">R$ 19,90</h5>
 							<form class="form-row">
 								<div class="col-md-7">
-									<a href="#" class="btn btn-primary" onclick="mostrarModal('produtoSucesso')">Adcionar ao carrinho</a>		
+									<a href="#" class="btn btn-primary">Adcionar ao carrinho</a>		
 								</div>
 								<div class="col-md-5">
 									<select class="form-control">
@@ -96,7 +102,7 @@
 							<h5 class="text-danger preço">R$ 19,90</h5>
 							<form class="form-row">
 								<div class="col-md-7">
-									<a href="#" class="btn btn-primary" onclick="mostrarModal('produtoSucesso')">Adcionar ao carrinho</a>		
+									<a href="#" class="btn btn-primary">Adcionar ao carrinho</a>		
 								</div>
 								<div class="col-md-5">
 									<select class="form-control">
@@ -122,7 +128,7 @@
 							<h5 class="text-danger preço">R$ 19,90</h5>
 							<form class="form-row">
 								<div class="col-md-7">
-									<a href="#" class="btn btn-primary" onclick="mostrarModal('produtoSucesso')">Adcionar ao carrinho</a>		
+									<a href="#" class="btn btn-primary">Adcionar ao carrinho</a>		
 								</div>
 								<div class="col-md-5">
 									<select class="form-control">
@@ -148,7 +154,7 @@
 							<h5 class="text-danger preço">R$ 19,90</h5>
 							<form class="form-row">
 								<div class="col-md-7">
-									<a href="#" class="btn btn-primary" onclick="mostrarModal('produtoSucesso')">Adcionar ao carrinho</a>		
+									<a href="#" class="btn btn-primary">Adcionar ao carrinho</a>		
 								</div>
 								<div class="col-md-5">
 									<select class="form-control">
@@ -174,7 +180,7 @@
 							<h5 class="text-danger preço">R$ 19,90</h5>
 							<form class="form-row">
 								<div class="col-md-7">
-									<a href="#" class="btn btn-primary" onclick="mostrarModal('produtoSucesso')">Adcionar ao carrinho</a>		
+									<a href="#" class="btn btn-primary">Adcionar ao carrinho</a>		
 								</div>
 								<div class="col-md-5">
 									<select class="form-control">
@@ -200,7 +206,7 @@
 							<h5 class="text-danger preço">R$ 19,90</h5>
 							<form class="form-row">
 								<div class="col-md-7">
-									<a href="#" class="btn btn-primary" onclick="mostrarModal('produtoSucesso')">Adcionar ao carrinho</a>		
+									<a href="#" class="btn btn-primary">Adcionar ao carrinho</a>		
 								</div>
 								<div class="col-md-5">
 									<select class="form-control">
@@ -226,26 +232,6 @@
     		<p>Todos os direitos reservados</p>
     	</div>
     </footer>
-
-    <!-- Modal-->
-    <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="h5Modal"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="textoModal">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" id="btnModal"></button>
-          </div>
-        </div>
-      </div>
-    </div>
     
 
     <!-- JS Bootstrap -->

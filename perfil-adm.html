@@ -20,7 +20,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container">
 
-          <a href="index.html" class="navbar-brand logo"><h1>Donna Luna</h1></a>
+          <a href="home-adm.html" class="navbar-brand logo"><h1>Donna Luna</h1></a>
 
           <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <i class="navbar-toggler-icon"></i>
@@ -28,13 +28,32 @@
 
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ml-auto">
+              	<li class="nav-item mr-5 mt-1">
+              		<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   		Oi, Adm :)
+						</button>
+					  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    	<a class="dropdown-item" href="#">Conta</a>
+					    	<div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">Gerenciar</h6>   	
+					    	<a class="dropdown-item" href="compras-adm.html">Compras</a>
+					    	<a class="dropdown-item" href="categorias-adm.html">Categorias</a>
+					    	<a class="dropdown-item" href="produtos-adm.html">Produtos</a>
+					    	<div class="dropdown-divider"></div>
+					    	<a class="dropdown-item" href="relatorios.html">Relatórios</a>
+					    	<div class="dropdown-divider"></div>
+					    	<a class="dropdown-item" href="index.html">LogOut</a>
+					 	</div>
+					</div>
+              	</li>
 
-              <li class="nav-item d-flex align-items-center">
-              	<a class="nav-link" href="carrinho.html">
-              		<i class="fas fa-shopping-cart fa-2x"></i>
-              	</a>
-              </li>
-
+              	<li class="nav-item d-flex align-items-center">
+              		<a class="nav-link" href="carrinho.html">
+              			<i class="fas fa-shopping-cart fa-2x"></i>
+              		</a>
+              	</li>
             </ul>
           </div>
 
@@ -42,14 +61,26 @@
       </nav>
     </header>
 
-    <section id="area-form" class="login">
+    <section id="area-form" class="cadastrar">
       <div class="container">
 
-        <h2>Entre e aproveite nossas ofertas!</h2>
+        <h2>Atualizar dados</h2>
 
         <form>
           <div class="form-group">
-            <label for="text">Login</label>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" class="form-control">
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="login">Login</label>
             <input type="text" id="login" class="form-control">
           </div>
 
@@ -58,20 +89,17 @@
             <input type="password" id="senha" class="form-control">
           </div>
 
-          <div class="mb-3">
-          	<a href="cadastrar.html" >Não possui uma conta? Cadastra-se</a>
+          <div class="px-5">
+            <a type="button" class="form-control btn btn-primary">Atualizar conta</a>
           </div>
 
-          <div class="form-row">
-            <div class="col-md-6 d-flex align-items-end">
-              <a type="button" class="form-control btn btn-danger" href="index.html">Voltar</a>
-            </div>
-
-            <div class="col-md-6 d-flex align-items-end">
-              <a type="button" class="form-control btn btn-primary" href="home-adm.html">Entrar</a>
-            </div>
           </div>
         </form>
+
+        <h2>Deseja excluir a conta?:(</h2>
+        <div class="btn-excluir">
+            <a type="button" class="form-control btn btn-danger">Excluir conta</a>
+        </div>
 
       </div>
     </section>
@@ -81,8 +109,6 @@
     		<p>Todos os direitos reservados</p>
     	</div>
     </footer>
-
-
     
 
     <!-- JS Bootstrap -->
